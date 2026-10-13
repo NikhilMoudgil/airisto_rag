@@ -1,0 +1,2 @@
+brand,model_series,code,meaning,likely_causes,user_checks,verdict,track,warnings,typical_parts,symptoms,source,reviewed_by,last_reviewed
+EXAMPLE_BRAND,,XX-1,Placeholder row showing the format - delete me,cause one | cause two,Switch off at the wall and restart after 5 minutes | Check the air filter is clean,self_fix,none,,,not cooling | ac thanda nahi kar raha,EXAMPLE - replace with manual name and page,,
