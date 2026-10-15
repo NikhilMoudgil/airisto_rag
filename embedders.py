@@ -76,7 +76,10 @@ class SentenceTransformerEmbedder:
                 "sentence-transformers is not installed. Run: pip install sentence-transformers"
             ) from e
         self._model = SentenceTransformer(model_name)
-        self.dim = self._model.get_sentence_embedding_dimension()
+        # method was renamed in newer sentence-transformers; support both
+        get_dim = getattr(self._model, "get_embedding_dimension", None) or \
+            self._model.get_sentence_embedding_dimension
+        self.dim = get_dim()
         self.query_prefix = query_prefix
         self.doc_prefix = doc_prefix
         self.name = f"st:{model_name}"
