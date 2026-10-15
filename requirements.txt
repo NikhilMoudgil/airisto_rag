@@ -1,0 +1,3 @@
+# core code is standard library only; these are optional
+sentence-transformers   # --embedder st (real multilingual embeddings)
+groq                    # --llm (friendly wrapper text)
